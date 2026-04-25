@@ -1,13 +1,8 @@
 import './App.css';
+import ProductsPage from './pages/ProductsPage';
 
 function App(): React.ReactElement {
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Ecommerce Store Running
-      </h1>
-    </div>
-  );
+  return <ProductsPage />;
 }
 
 export default App;
