@@ -21,7 +21,7 @@ app.use(morgan('dev'));
 connectDB();
 
 // Health check
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.json({ message: 'API is running...' });
 });
 
@@ -32,7 +32,7 @@ app.use('/api/v1/cart', cartRoutes);
 app.use('/api/v1/orders', orderRoutes);
 
 // Handle unregistered routes
-app.use('*', (req, res) => {
+app.use('*', (_req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
