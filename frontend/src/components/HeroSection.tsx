@@ -1,18 +1,30 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-r from-pink-50 to-purple-50 py-20 md:py-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Latest Ladies Suits Collection
+    <section className="relative bg-gradient-to-br from-[#d9c4bd] to-[#f0e8e6] py-48 md:py-32 h-[600px] overflow-hidden">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center ">
+        <div className="max-w-2xl flex-1 flex flex-col items-center">
+          <h1 className="text-2xl md:text-6xl font-light mb-4 leading-4 tracking-normal text-center">
+            More Than Fashion
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            Discover our premium collection of handcrafted ladies suits. Perfect
-            designs for every occasion with quality fabrics.
+          <p className="text-lg md:text-5xl text-muted-foreground font-semibold mb-8 text-center">
+            It's a Lifestyle !
           </p>
-          <Button variant="outline">Shop Now</Button>
+          {/* <Button variant="outline">Shop Now</Button> */}
+          <span className="flex items-center justify-center">
+            Efforts look for every moment
+          </span>
+
+          <Button className="bg-black text-white mt-4 w-fit">Explore</Button>
+        </div>
+
+        <div className="flex flex-1">
+          <img
+            src="/women-suite.jpg"
+            alt="Fashion"
+            className="absolute h-full w-[500px] bottom-0 right-72  object-cover"
+          />
         </div>
       </div>
     </section>

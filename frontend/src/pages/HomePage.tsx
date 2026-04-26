@@ -6,11 +6,13 @@ import NavBar from "@/components/NavBar";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <NavBar />
-      <HeroSection />
-      <FeaturedProducts />
-      <FeaturesSection />
+      <main className="flex-1">
+        <HeroSection />
+        <FeaturedProducts />
+        <FeaturesSection />
+      </main>
       <Footer />
     </div>
   );
