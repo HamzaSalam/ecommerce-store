@@ -9,10 +9,10 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const defaultImage = 'https://placehold.co/400x400/e2e8f0/1e293b?text=No+Image';
+  const defaultImage = 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400';
 
   return (
-    <Card className="w-full max-w-sm overflow-hidden">
+    <Card className="overflow-hidden h-full flex flex-col">
       <div className="aspect-square relative bg-gray-100">
         <img
           src={product.images[0] || defaultImage}
@@ -28,12 +28,12 @@ export function ProductCard({ product }: ProductCardProps) {
         <h3 className="font-semibold text-lg line-clamp-1">{product.title}</h3>
       </CardHeader>
 
-      <CardContent className="p-4 pt-2">
-        <p className="text-sm text-muted-foreground line-clamp-2">
+      <CardContent className="p-4 pt-2 flex-1">
+        <p className="text-sm text-muted-foreground line-clamp-2 mb-2">
           {product.description || 'No description available'}
         </p>
-        <div className="mt-2 flex items-center justify-between">
-          <span className="text-2xl font-bold">${product.price.toFixed(2)}</span>
+        <div className="flex items-center justify-between">
+          <span className="text-2xl font-bold">Rs. {product.price.toLocaleString()}</span>
           <Badge variant={product.stock > 0 ? 'default' : 'destructive'}>
             {product.stock > 0 ? `${product.stock} in stock` : 'Out of stock'}
           </Badge>

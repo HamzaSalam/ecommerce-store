@@ -3,11 +3,9 @@ import { Input as InputPrimitive } from "@base-ui/react/input"
 
 import { cn } from "@/lib/utils"
 
-function Input({
-  className,
-  type,
-  ...props
-}) {
+export type InputProps = React.InputHTMLAttributes<HTMLInputElement>
+
+function Input({ className, type, ...props }: InputProps) {
   return (
     <InputPrimitive
       type={type}

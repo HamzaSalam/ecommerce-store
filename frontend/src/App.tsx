@@ -1,8 +1,8 @@
 import './App.css';
-import ProductsPage from './pages/ProductsPage';
+import HomePage from './pages/HomePage';
 
 function App(): React.ReactElement {
-  return <ProductsPage />;
+  return <HomePage />;
 }
 
 export default App;
