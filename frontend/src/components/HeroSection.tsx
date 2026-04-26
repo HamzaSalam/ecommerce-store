@@ -16,7 +16,9 @@ export function HeroSection() {
             Efforts look for every moment
           </span>
 
-          <Button className="bg-black text-white mt-4 w-fit">Explore</Button>
+          <Button className="bg-black text-white mt-4 w-fit py-5 px-5">
+            Explore
+          </Button>
         </div>
 
         <div className="flex flex-1">

@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { NewArrivals } from "@/components/NewArrivals";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { Footer } from "@/components/Footer";
@@ -10,6 +11,7 @@ export default function HomePage() {
       <NavBar />
       <main className="flex-1">
         <HeroSection />
+        <NewArrivals />
         <FeaturedProducts />
         <FeaturesSection />
       </main>
